@@ -2,7 +2,7 @@
 #include<cmath>
 using namespace std;
 
-char start='A',end='C',temp='B';
+char start='A',dest='C',temp='B';
 void hanoi_nonRecursive(int n,int m)
 {
 	int i;
@@ -12,13 +12,13 @@ void hanoi_nonRecursive(int n,int m)
 		if(n%2==0)
 		{
 			int drop=temp;
-			temp=end;
-			end=drop;
+			temp=dest;
+			dest=drop;
 		}
 		if(i%3==1)
 		{
 			from=start;
-			to=end;
+			to=dest;
 		}
 		 if(i%3==2)
 		{
@@ -28,7 +28,7 @@ void hanoi_nonRecursive(int n,int m)
 		else
 		{
 			from=temp;
-			to=end;
+			to=dest;
 		}
 		
 		cout<<"Disk moves from "<<from<<" to "<<to<<endl;
