@@ -46,21 +46,20 @@ struct operations
 		
 		void hexaDecimal(int n)
 		{
-			stringstream ss;
 			cout<<"The hexadecimal convertion of the number "<<n;
-			string con=NULL;
+			string con="";
 			while(n!=0)
 			{
 				int r=n%16;
 				if(r<10)
 				{
-					ss>>r;
-					con=con+ss;
+					stringstream ss;
+					ss<<r;
+					con=ss.str()+con;
 				}
-				else if(r>9&&r<15)
+				else
 				{
-					ss>>r+56;
-					con=con+ss;
+					con=char(r+55)+con;
 				}
 				n=n/16;
 			}

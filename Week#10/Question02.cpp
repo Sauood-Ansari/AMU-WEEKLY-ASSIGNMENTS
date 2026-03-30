@@ -6,7 +6,7 @@ struct monthlyPay
 {
 	public:
 
-	static const float daPc=0.52;
+	static constexpr float daPc=0.52;
 	string name[100];
 	float basicPay[100];
 	float grossSalary[100];

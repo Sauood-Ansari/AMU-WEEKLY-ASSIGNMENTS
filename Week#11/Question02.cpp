@@ -32,7 +32,7 @@ int main()
 	cin>>num1;
 	cout<<"Enter the second number\n";
 	cin>>num2;
-	cout<"Choose the operation to be performed\n";
+	cout<<"Choose the operation to be performed\n";
 	cout<<"1.Addition\n";
 	cout<<"2.Substraction\n";
 	cout<<"3.Multiplication\n";

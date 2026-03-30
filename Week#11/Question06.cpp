@@ -37,7 +37,7 @@ class BankAccount
 				cout<<"Insufficiant balance in account\n";
 			else
 			{
-				balace-=debit;
+				balance-=debit;
 			}
 		}
 		
@@ -68,5 +68,6 @@ int main()
 	cin>>ch;
 	if(ch=='y'||ch=='Y')
 		ba.disp();
-	else if(ch)
+	else
+		cout<<"Goodbye!\n";
 }
